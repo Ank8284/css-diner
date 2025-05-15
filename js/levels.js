@@ -399,6 +399,16 @@ var levels = [
     examples : [
       '<strong>:nth-last-child(2)</strong> selects all second-to-last child elements.'
     ],
+    // Adding Nth-of-Type information
+    additionalInfo: {
+      selectorName: "Nth-of-Type Selector",
+      helpTitle: "Select an element based on its occurrence among siblings of the same type.",
+      syntax: ":nth-of-type(A)",
+      help: "Targets elements of the same type by their position within a parent, counting from the start. Similar to :nth-child, but it only considers siblings of the same type, not all child elements.",
+      examples: [
+        '<strong>p:nth-of-type(3)</strong> selects the third `<p>` element within its parent.'
+      ]
+    },
     boardMarkup: `
     <plate/>
     <bento/>
