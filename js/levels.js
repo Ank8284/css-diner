@@ -397,9 +397,10 @@ var levels = [
     syntax: ":nth-last-child(A)",
     help : "Selects the children from the bottom of the parent. This is like nth-child, but counting from the back!",
     examples : [
-      '<strong>:nth-last-child(2)</strong> selects all second-to-last child elements.'
+      '<strong>:nth-last-child(2)</strong> selects all second-to-last child elements.',
+      '<strong>p:nth-last-child(3)</strong> selects the third-to-last `<p>` element within its parent.', // added new example for better understanding
     ],
-    // Adding Nth-of-Type information
+    // also another apporch: Adding Nth-of-Type information
     additionalInfo: {
       selectorName: "Nth-of-Type Selector",
       helpTitle: "Select an element based on its occurrence among siblings of the same type.",
