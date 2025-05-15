@@ -393,7 +393,7 @@ var levels = [
     selectorName: "Nth Last Child Selector",
     helpTitle: "Select an element by its order in another element, counting from the back",
     doThis : "Select the 1st bento",
-    selector : "bento:nth-last-child(3)",
+    selector : ["bento:nth-last-child(3)", "bento:nth-of-type(1)"], // Array for multiple selectors
     syntax: ":nth-last-child(A)",
     help : "Selects the children from the bottom of the parent. This is like nth-child, but counting from the back!",
     examples : [
